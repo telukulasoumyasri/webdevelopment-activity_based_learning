@@ -1,0 +1,658 @@
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #F8F5EF;
+    color: #202522;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #064E3B;
+    border-bottom: 1px solid rgba(176, 141, 87, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1250px;
+    margin: auto;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo,
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+.logo span,
+.footer-logo span {
+    color: #D6B779;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: #F8F5EF;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #D6B779;
+}
+
+/* Offers Hero */
+.offers-hero {
+    padding: 80px 20px;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(
+        135deg,
+        #043C2D,
+        #064E3B 60%,
+        #173F31
+    );
+}
+
+.hero-content {
+    max-width: 760px;
+    margin: auto;
+}
+
+.eyebrow {
+    color: #A1824E;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 13px;
+}
+
+.offers-hero .eyebrow {
+    color: #D6B779;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(36px, 5vw, 60px);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: #D6B779;
+}
+
+.hero-content > p:not(.eyebrow) {
+    max-width: 570px;
+    margin: 0 auto 20px;
+    color: #E3E9E4;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.hero-discount {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 8px 0 25px;
+    border: 1px solid #D6B779;
+    color: #D6B779;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.hero-button {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 14px 28px;
+    background-color: #B08D57;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #D6B779;
+    color: #202522;
+}
+
+.hero-content .offer-note {
+    margin-top: 18px;
+    margin-bottom: 0;
+    font-size: 10px;
+    color: #C6D2C9;
+}
+
+/* Benefits Strip */
+.offer-benefits {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1150px;
+    margin: auto;
+    padding: 35px 5%;
+    border-bottom: 1px solid #E1DACE;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.benefit-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #B08D57;
+    border-radius: 50%;
+    color: #A1824E;
+    font-size: 20px;
+}
+
+.benefit-item h3 {
+    color: #064E3B;
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.benefit-item p {
+    color: #777D77;
+    font-size: 11px;
+}
+
+/* Main Offers Container */
+.offers-container {
+    max-width: 1250px;
+    margin: auto;
+    padding: 70px 5%;
+}
+
+/* Section Heading */
+.section-heading {
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.section-heading h2 {
+    font-family: 'Playfair Display', serif;
+    color: #064E3B;
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.section-heading > p:last-child {
+    color: #777D77;
+    font-size: 13px;
+}
+
+/* Offer Product Grid */
+.offer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px 22px;
+}
+
+.offer-card {
+    background-color: #FFFFFF;
+    border: 1px solid #EAE5DA;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 0;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(32, 37, 34, 0.09);
+}
+
+/* Offer Images */
+.offer-image {
+    height: 270px;
+    position: relative;
+    overflow: hidden;
+    background-color: #EDE8DF;
+}
+
+.offer-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.offer-card:hover .offer-image img {
+    transform: scale(1.05);
+}
+
+.discount-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 8px 12px;
+    background-color: #064E3B;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Offer Information */
+.offer-info {
+    padding: 22px 20px;
+}
+
+.product-category {
+    color: #A1824E;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.offer-info h3 {
+    color: #064E3B;
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.product-description {
+    color: #777D77;
+    font-size: 12px;
+    line-height: 1.8;
+    min-height: 43px;
+    margin-bottom: 14px;
+}
+
+/* Price Row */
+.price-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 4px;
+}
+
+.sale-price {
+    color: #064E3B;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.old-price {
+    color: #92968F;
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+.offer-saving {
+    color: #A1824E;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+/* Offer Buttons */
+.offer-button {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    background-color: #064E3B;
+    border: 1px solid #064E3B;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.offer-button:hover {
+    background-color: #B08D57;
+    border-color: #B08D57;
+}
+
+/* Coupon Section */
+.coupon-section {
+    margin-top: 85px;
+    padding: 45px;
+    background-color: #EDE7DA;
+    border: 1px solid #D6C8AE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.coupon-content {
+    max-width: 600px;
+}
+
+.coupon-content h2 {
+    color: #064E3B;
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.coupon-content > p:not(.eyebrow) {
+    color: #6D736B;
+    font-size: 12px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.coupon-box {
+    display: inline-flex;
+    align-items: center;
+    border: 1px dashed #A1824E;
+    background-color: #F8F5EF;
+}
+
+.coupon-code {
+    padding: 12px 18px;
+    color: #064E3B;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.copy-button {
+    height: 100%;
+    padding: 13px 16px;
+    border: none;
+    background-color: #064E3B;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.copy-button:hover {
+    background-color: #B08D57;
+}
+
+.coupon-content .coupon-note {
+    font-size: 10px;
+    margin: 10px 0 0;
+}
+
+.coupon-decoration {
+    width: 180px;
+    height: 180px;
+    flex-shrink: 0;
+    border: 2px solid #B08D57;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #064E3B;
+    outline: 1px solid #B08D57;
+    outline-offset: 7px;
+}
+
+.coupon-decoration span {
+    font-family: 'Playfair Display', serif;
+    font-size: 49px;
+    line-height: 1.1;
+}
+
+.coupon-decoration p {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* Final Banner */
+.final-banner {
+    margin-top: 85px;
+    padding: 60px 25px;
+    background-color: #064E3B;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.final-banner .eyebrow {
+    color: #D6B779;
+}
+
+.final-banner h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.final-banner > p:not(.eyebrow) {
+    max-width: 550px;
+    margin: 0 auto 25px;
+    color: #E3E9E4;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.final-button {
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #B08D57;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.final-button:hover {
+    background-color: #D6B779;
+    color: #202522;
+}
+
+/* Footer */
+footer {
+    background-color: #202522;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 45px 20px 25px;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+footer > p {
+    color: #C5C8C3;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: #D6B779;
+    font-size: 12px;
+}
+
+.footer-links a:hover {
+    color: #FFFFFF;
+}
+
+footer .copyright {
+    border-top: 1px solid #414741;
+    padding-top: 20px;
+    margin-top: 25px;
+    font-size: 11px;
+    color: #A6AAA4;
+}
+
+/* Tablet Responsive Design */
+@media (max-width: 950px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .offer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .offer-benefits {
+        gap: 18px;
+    }
+
+    .benefit-item {
+        align-items: flex-start;
+    }
+
+    .coupon-decoration {
+        width: 145px;
+        height: 145px;
+    }
+
+    .coupon-decoration span {
+        font-size: 40px;
+    }
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 18px 4%;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .offers-hero {
+        padding: 60px 18px;
+    }
+
+    .offer-benefits {
+        grid-template-columns: 1fr;
+        padding: 25px 6%;
+        gap: 22px;
+    }
+
+    .offers-container {
+        padding: 45px 4%;
+    }
+
+    .section-heading h2 {
+        font-size: 31px;
+    }
+
+    .offer-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .offer-image {
+        height: 280px;
+    }
+
+    .offer-info {
+        padding: 20px;
+    }
+
+    .coupon-section {
+        margin-top: 55px;
+        padding: 30px 22px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .coupon-content h2 {
+        font-size: 30px;
+    }
+
+    .coupon-decoration {
+        width: 130px;
+        height: 130px;
+        align-self: center;
+    }
+
+    .coupon-decoration span {
+        font-size: 35px;
+    }
+
+    .final-banner {
+        margin-top: 55px;
+        padding: 45px 20px;
+    }
+}

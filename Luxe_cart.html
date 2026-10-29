@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Bag | LUXE LANE</title>
+    <link rel="stylesheet" href="Luxe_cart.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <a href="index.html" class="logo">LUXE <span>LANE</span></a>
+
+        <nav>
+            <a href="luxe_homepage.html">Home</a>
+            <a href="Luxe_shop.html">Shop</a>
+            <a href="Luxe_catogiries.html">Categories</a>
+            <a href="Luxe_offers.html">Offers</a>
+            <a href="Luxe_cart.html" class="active">Cart</a>
+        </nav>
+    </header>
+
+    <!-- Page Heading -->
+    <section class="cart-hero">
+        <p class="eyebrow">YOUR PERSONAL COLLECTION</p>
+        <h1>Your Shopping <span>Bag</span></h1>
+        <p>Beautiful finds, thoughtfully chosen.</p>
+    </section>
+
+    <!-- Cart Section -->
+    <main class="cart-container">
+
+        <div class="cart-heading">
+            <h2>Shopping Bag <span>(3 Items)</span></h2>
+            <a href="shop.html" class="continue-link">Continue Shopping →</a>
+        </div>
+
+        <div class="cart-layout">
+
+            <!-- Cart Items -->
+            <section class="cart-items">
+
+                <!-- Product 1 -->
+                <article class="cart-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=500&q=80"
+                        alt="Classic Luxe Handbag">
+
+                    <div class="item-details">
+                        <p class="item-category">FASHION</p>
+                        <h3>Classic Luxe Handbag</h3>
+                        <p class="item-description">Elegant design · Everyday luxury</p>
+                        <p class="item-price">₹2,399 <del>₹2,999</del></p>
+
+                        <div class="item-actions">
+                            <div class="quantity">
+                                <button type="button" aria-label="Decrease quantity">−</button>
+                                <span>1</span>
+                                <button type="button" aria-label="Increase quantity">+</button>
+                            </div>
+
+                            <button type="button" class="remove-btn">Remove</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="cart-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=500&q=80"
+                        alt="Golden Hour Watch">
+
+                    <div class="item-details">
+                        <p class="item-category">ACCESSORIES</p>
+                        <h3>Golden Hour Watch</h3>
+                        <p class="item-description">Timeless elegance · Gold finish</p>
+                        <p class="item-price">₹3,399 <del>₹3,999</del></p>
+
+                        <div class="item-actions">
+                            <div class="quantity">
+                                <button type="button" aria-label="Decrease quantity">−</button>
+                                <span>1</span>
+                                <button type="button" aria-label="Increase quantity">+</button>
+                            </div>
+
+                            <button type="button" class="remove-btn">Remove</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="cart-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=500&q=80"
+                        alt="Midnight Bloom Perfume">
+
+                    <div class="item-details">
+                        <p class="item-category">BEAUTY</p>
+                        <h3>Midnight Bloom Perfume</h3>
+                        <p class="item-description">Signature fragrance · 50 ml</p>
+                        <p class="item-price">₹1,499 <del>₹1,899</del></p>
+
+                        <div class="item-actions">
+                            <div class="quantity">
+                                <button type="button" aria-label="Decrease quantity">−</button>
+                                <span>1</span>
+                                <button type="button" aria-label="Increase quantity">+</button>
+                            </div>
+
+                            <button type="button" class="remove-btn">Remove</button>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="shopping-note">
+                    <span>✦</span>
+                    <p>Your style deserves something special. Thank you for shopping with LUXE LANE.</p>
+                </div>
+
+            </section>
+
+            <!-- Order Summary -->
+            <aside class="order-summary">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span>₹7,297</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Discount</span>
+                    <span class="discount">− ₹1,600</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Delivery</span>
+                    <span class="free">FREE</span>
+                </div>
+
+                <div class="coupon">
+                    <label for="coupon-code">Have a coupon?</label>
+
+                    <div class="coupon-input">
+                        <input
+                            type="text"
+                            id="coupon-code"
+                            placeholder="Enter coupon code">
+
+                        <button type="button" onclick="applyCoupon()">Apply</button>
+                    </div>
+
+                    <p id="coupon-message">Try code LUXE10 for an extra offer.</p>
+                </div>
+
+                <div class="summary-total">
+                    <span>Total Amount</span>
+                    <span id="total-price">₹7,297</span>
+                </div>
+
+                <p class="tax-note">Inclusive of applicable taxes</p>
+
+                <button type="button" class="checkout-btn" onclick="checkoutMessage()">
+                    Proceed to Checkout →
+                </button>
+
+                <div id="checkout-message"></div>
+
+                <div class="secure-checkout">
+                    <span>🔒</span>
+                    <div>
+                        <h4>Safe & Secure Shopping</h4>
+                        <p>Your shopping experience matters to us.</p>
+                    </div>
+                </div>
+
+                <a href="Luxe_shop.html" class="back-shopping">← Back to shopping</a>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+    <!-- Benefits -->
+    <section class="benefits">
+        <div>
+            <span>✦</span>
+            <h3>Curated Quality</h3>
+            <p>Pieces chosen with care</p>
+        </div>
+
+        <div>
+            <span>♧</span>
+            <h3>Free Delivery</h3>
+            <p>On this sample order</p>
+        </div>
+
+        <div>
+            <span>♡</span>
+            <h3>Made for You</h3>
+            <p>Luxury in every detail</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="index.html" class="footer-logo">LUXE LANE</a>
+        <p>Everyday essentials. Extraordinary elegance.</p>
+        <p class="copyright">© 2026 LUXE LANE. All rights reserved.</p>
+    </footer>
+
+    <!-- Demo Coupon and Checkout Messages -->
+    <script>
+        function applyCoupon() {
+            const coupon = document.getElementById("coupon-code").value.trim().toUpperCase();
+            const message = document.getElementById("coupon-message");
+
+            if (coupon === "LUXE10") {
+                message.textContent = "Demo coupon recognized! Real discounts are not connected.";
+                message.style.color = "#064E3B";
+            } else {
+                message.textContent = "Please enter a valid demo coupon code.";
+                message.style.color = "#9A3D32";
+            }
+        }
+
+        function checkoutMessage() {
+            document.getElementById("checkout-message").textContent =
+                "Thank you for shopping with LUXE LANE! Checkout is a demo and payment is not connected.";
+        }
+    </script>
+
+</body>
+</html>

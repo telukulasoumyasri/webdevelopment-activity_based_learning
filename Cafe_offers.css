@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf7ff;
+    color: #392747;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #eee4fa;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    color: #684080;
+    font-size: 28px;
+}
+
+nav a {
+    color: #50345f;
+    text-decoration: none;
+    margin: 8px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #a16eb5;
+}
+
+.hero {
+    padding: 65px 7%;
+    text-align: center;
+    background: linear-gradient(135deg, #f1e6ff, #fcecf4);
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    color: #684080;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 22px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #684080;
+    color: white;
+    padding: 11px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #8d65a4;
+}
+
+.section {
+    padding: 45px 7%;
+}
+
+.section h2 {
+    text-align: center;
+    font-family: Georgia, serif;
+    color: #684080;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #eadcf3;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #68408012;
+    padding-bottom: 18px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #684080;
+    margin: 12px 8px 5px;
+}
+
+.card p {
+    margin: 5px 12px;
+    font-size: 14px;
+}
+
+.price {
+    color: #995b85;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.offer {
+    background-color: #eee4fa;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px;
+    border: 1px solid #d8c5e7;
+    border-radius: 8px;
+    font: inherit;
+    background-color: white;
+}
+
+label {
+    font-weight: bold;
+    color: #684080;
+}
+
+footer {
+    background-color: #392747;
+    color: #faf7ff;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #ead8ff;
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .section {
+        padding: 30px 5%;
+    }
+}

@@ -1,0 +1,112 @@
+/* General Style */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+}
+
+
+/* Navigation Bar */
+
+header {
+    background-color: #5b1a1a;
+    color: white;
+    padding: 20px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    color:white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color:white;
+}
+
+
+/* Home Section */
+
+.home {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color:lightgray;
+    background-color: lightgray;
+}
+
+.home-content h2 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: #5b1a1a;
+}
+
+.home-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #5b1a1a;
+}
+
+
+/* Button */
+
+button {
+    background-color:maroon;
+    color: white;
+
+    border: none;
+    padding: 14px 25px;
+
+    font-size: 17px;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cf6415;
+}
+
+
+/* Welcome Section */
+
+.welcome {
+    text-align: center;
+    padding: 60px 30px;
+}
+
+.welcome h2 {
+    color: #5b1a1a;
+    font-size: 32px;
+}
+
+.welcome p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: auto;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #5b1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
